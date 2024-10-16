@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
@@ -44,4 +44,28 @@ header {
     flex-wrap: wrap;
   }
 }
-</style>
+</style> -->
+
+<template>
+  <div id="app">
+    <AppHeader />
+    <HomeHero />
+    <AboutSection />
+  </div>
+</template>
+
+
+<script>
+import AppHeader from './components/AppHeader.vue';
+import HomeHero from './components/HomeHero.vue';
+import AboutSection from './components/AboutSection.vue';
+
+
+export default {
+  components: {
+    AppHeader,
+    HomeHero,
+    AboutSection,
+  }
+};
+</script>
